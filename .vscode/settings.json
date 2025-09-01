@@ -1,0 +1,12 @@
+{
+  "sqltools.connections": [
+    {
+      "server": "localhost",
+      "port": 5433,
+      "driver": "PostgreSQL",
+      "database": "employees_management",
+      "username": "admin",
+      "name": "employees_management"
+    }
+  ]
+}
