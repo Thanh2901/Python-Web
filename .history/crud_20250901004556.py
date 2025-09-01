@@ -5,6 +5,7 @@ from datetime import date
 
 # ========== Employee CRUD ==========
 def create_employee(db: Session, employee: EmployeeCreate):
+    # Kiểm tra email trùng
     if db.query(Employee).filter(Employee.email == employee.email).first():
         return None
     db_employee = Employee(**employee.dict())
